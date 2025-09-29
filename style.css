@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #90F1EF 10%, dodgerblue 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body::before, body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+body::before{
+    background: linear-gradient(135deg, dodgerblue 10%, #90F1EF 100%);
+    clip-path: circle(30% at left 20%);
+}
+body::after{
+    background: linear-gradient(135deg, dodgerblue 10%, #90F1EF 100%);
+    clip-path: circle(20% at right 70%);
+}
+
+header{
+    height: 85vh;
+    width: 90%;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    border-radius: 25px;
+    position: relative;
+    margin: auto;
+}
+
+header .navbar{
+    margin: auto;
+    width: 100%;
+    padding: 35px 50px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.navbar .menu li{
+    list-style: none;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+.navbar .menu li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #f2f2f2;
+}
+
+.navbar .buttons input{
+    outline: none;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 6px 15px;
+    border: none;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+}
+.navbar .buttons input:hover{
+    transform: scale(0.95);
+    background: none;
+}
+
+header .text-content{
+    position: relative;
+    margin: 100px 0 0 50px;
+    text-align: center;
+}
+header .text-content h2{
+    font-size: 60px;
+    color: #f2f2f2;
+    font-weight: 700;
+    line-height: 1.2;
+}
+header .text-content p{
+    font-size: 20px;
+    color: #f2f2f2;
+    font-weight: 500;
+    margin: 20px 0;
+}
